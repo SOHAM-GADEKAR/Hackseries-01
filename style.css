@@ -1,0 +1,268 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #176B87;
+    font-family: 'Merriweather', serif;
+}
+
+/* Navbar */
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    height: 75px;
+    background-color: #04364A;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #DAFFFB;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #DAFFFB;
+}
+
+nav ul li a:hover {
+    color: #176B87;
+    font-size: 1.13rem;
+}
+
+.left {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+}
+
+/* Hero Section */
+.firstSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+    padding: 0 20px;
+    background-color:#176B87;
+}
+
+.firstSection > div {
+    width: 45%;
+    text-align: center;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #DAFFFB;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background-color: #DAFFFB;
+    border: 2px solid #04364A;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.leftSection .button .btn a {
+    text-decoration: none;
+    color: #04364A;
+}
+
+.rightSection img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 130px;
+}
+
+/* About Me Section */
+.secondSection {
+    background-color: #DAFFFB;
+    padding: 40px 20px;
+    color: #04364A;
+    text-align: center;
+}
+
+.secondSection .aboutme {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.secondSection .shortaboutme {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+/* Skills Section */
+.thirdSection {
+    margin: 50px 0px;
+    background-color:#176B87;
+}
+
+.thirdSection #skl {
+    text-align: center;
+    font-size: 2rem;
+    color: #DAFFFB;
+    margin: 40px 0;
+}
+
+.lowerthird {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 80%;
+    gap: 20px;
+}
+
+.lowerthird > div {
+    background-color: #DAFFFB;
+    color: #04364A;
+    width: 25%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.lowerthird > div p {
+    font-size: 1.2rem;
+    margin: 55px 0;
+    color: #04364A;
+}
+
+
+/* Project Section */
+.forthSection {
+    margin: 50px 0px;
+    padding: 20px 0px;
+    background-color: #DAFFFB;
+}
+
+.forthSection #proj {
+    text-align: center;
+    font-size: 2rem;
+    color: #04364A;
+    margin: 40px 0;
+}
+
+.lowerforth{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 80%;
+    gap: 20px;
+}
+
+.lowerforth > div {
+    background-color: #176B87;
+    color: #DAFFFB;
+    width: 25%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.lowerforth > div p {
+    font-size: 1.2rem;
+    margin: 55px 0;
+    color: #DAFFFB;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .firstSection {
+        flex-direction: column;
+    }
+
+    .firstSection > div {
+        width: 100%;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    .rightSection img {
+        max-width: 300px;
+    }
+
+    .lowerthird {
+        flex-direction: column;
+    }
+
+    .lowerforth {
+        flex-direction: column;
+    }
+
+    .lowerthird > div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .lowerforth > div {
+        width: 80%;
+        margin: 0 auto;
+    }
+} 
+
+@media (max-width: 480px) {
+    nav ul {
+        align-items: center;
+    }
+
+    .firstSection {
+        padding: 20px;
+        margin: 50px 0;
+    }
+
+    .secondSection {
+        padding: 20px;
+    }
+
+    .thirdSection #skl {
+        font-size: 1.8rem;
+    }
+
+    .forthSection #proj {
+        font-size: 1.8rem;
+    }
+
+    .lowerthird > div {
+        width: 90%;
+    }
+
+    .lowerforth > div {
+        width: 90%;
+    }
+} 
