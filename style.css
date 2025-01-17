@@ -56,9 +56,21 @@ nav ul li a:hover {
     /* font-weight: bold; */
 }
 
+nav .right i{
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    align-items: center;
+}
+
 @media (max-width: 600px) {
-    nav .right{
+    nav .right li{
         display: none;
+    }
+
+    nav .right i {
+        display: block;
     }
     
 }
