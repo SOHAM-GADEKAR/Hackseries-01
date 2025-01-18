@@ -16,7 +16,7 @@ html, body {
 header {
     position: sticky;
     top: 0;
-    
+    z-index: 1000;
 }
 
 nav {
@@ -32,6 +32,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
@@ -53,26 +54,41 @@ nav ul li a:hover {
 
 .left {
     font-size: 1.5rem;
-    /* font-weight: bold; */
 }
 
-nav .right i{
+nav .right i {
     display: none;
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.8rem;
+    font-weight: bold;
     cursor: pointer;
-    align-items: center;
+    color: #DAFFFB;
 }
 
 @media (max-width: 600px) {
-    nav .right li{
+    nav ul {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background-color: #04364A;
+        width: 100%;
+        border-top: 1px solid #DAFFFB;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
     }
 
     nav .right i {
         display: block;
     }
-    
 }
 
 /* Hero Section */
@@ -180,6 +196,11 @@ nav .right i{
     gap: 20px;
 }
 
+.lowerthird :hover{
+    position: relative;
+    top: -5px;
+}
+
 .lowerthird > div {
     background-color: #DAFFFB;
     color: #04364A;
@@ -227,6 +248,11 @@ nav .right i{
     justify-content: space-around;
     height: 80%;
     gap: 20px;
+}
+
+.lowerforth :hover{
+    position: relative;
+    top: -5px;
 }
 
 .lowerforth > div {
