@@ -4,5 +4,3 @@ const navLinks = document.querySelector('nav ul');
 burger.addEventListener('click', function(){
     navLinks.classList.toggle('active');
 });
-
-
